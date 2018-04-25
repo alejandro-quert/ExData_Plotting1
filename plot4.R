@@ -2,9 +2,9 @@ plot4 <- function()
 {
 	#Download and unzip data. 
 	#If you are running this script more than once, you can comment the following three lines after the first time.
-	#fileUrl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip";	
-	#download.file(fileUrl, destfile = "data.zip");	
-	#unzip("data.zip");
+	fileUrl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip";	
+	download.file(fileUrl, destfile = "data.zip");	
+	unzip("data.zip");
 	
 	dataset <- read.csv("household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "?");
 	
